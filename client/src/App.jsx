@@ -13,7 +13,7 @@ const name = [
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <Navbar/>
       <Formation name={name} />
       <Footer />
