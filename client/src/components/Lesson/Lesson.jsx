@@ -1,4 +1,4 @@
-import "./Lesson-styles.css"
+import "./lesson-styles.css"
 
 function Lesson() {
     return (
