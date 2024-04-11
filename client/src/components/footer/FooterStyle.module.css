@@ -6,12 +6,13 @@
   flex-direction: column;
   font-family: "Helvetica", sans-serif;
   font-size: 1rem;
+  /* margin-top: auto; */
 }
 
 .footerText {
-  color: black;
+  color: #5d7081;
 }
 
 .footerLink {
-  color: black;
+  color: #5d7081;
 }
