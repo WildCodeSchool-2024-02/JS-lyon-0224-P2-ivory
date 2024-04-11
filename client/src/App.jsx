@@ -1,7 +1,7 @@
 import "./App.css";
 import Lesson from "./components/Lesson/Lesson"
 import Footer from "./components/footer/Footer";
-import Formation from "./components/formation";
+import Formation from "./components/formation/Formation";
 
 const name = [
   { formation: "HTML" },
