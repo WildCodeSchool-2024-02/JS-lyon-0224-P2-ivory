@@ -1,4 +1,5 @@
-.container-footer {
+/* FooterStyle.module.css */
+.containerFooter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,9 +7,11 @@
   font-family: "Helvetica", sans-serif;
   font-size: 1rem;
 }
-.footer-text {
+
+.footerText {
   color: black;
 }
-.footer-link {
+
+.footerLink {
   color: black;
 }
