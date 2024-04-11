@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Lesson from "./components/Lesson/Lesson"
 import Footer from "./components/footer/Footer";
 import Formation from "./components/formation/Formation";
 
