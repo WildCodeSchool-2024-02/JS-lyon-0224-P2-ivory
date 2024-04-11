@@ -1,8 +1,8 @@
-import Html from "../assets/logos/HTML.png"
-import Css from "../assets/logos/CSS.png"
-import Js from "../assets/logos/JS.png"
-import React from "../assets/logos/REACT.png"
-import Git from "../assets/logos/GIT.png"
+import Html from "../../assets/logos/HTML.png"
+import Css from "../../assets/logos/CSS.png"
+import Js from "../../assets/logos/JS.png"
+import React from "../../assets/logos/REACT.png"
+import Git from "../../assets/logos/GIT.png"
 
 
 function NavBar() {
