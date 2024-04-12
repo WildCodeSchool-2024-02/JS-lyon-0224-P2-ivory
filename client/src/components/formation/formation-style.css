@@ -1,0 +1,23 @@
+.buttonFormations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+  width: 93vw;
+  align-self: flex-end;
+}
+
+.buttonFormations button {
+  background-color: #fffcf4;
+  width: 80vw;
+  height: 10vh;
+  margin-top: 25px;
+  place-items: center;
+  text-decoration-color: #ffc736;
+  font-size: 40px;
+  color: #5d7081;
+  border-radius: 0.5rem;
+  border-color: #5d7081;
+  border: solid 0.25rem;
+}

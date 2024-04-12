@@ -1,0 +1,18 @@
+/* FooterStyle.module.css */
+.containerFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1rem;
+  /* margin-top: auto; */
+}
+
+.footerText {
+  color: #5d7081;
+}
+
+.footerLink {
+  color: #5d7081;
+}
