@@ -1,4 +1,13 @@
 .containerBannerLogo {
-  height: 25vh;
-  width: auto;
+  display: flex;
+  height: 10vh;
+  width: 93vw;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerBannerLogo img {
+  max-height: 15vh;
+  width: 60vw;
 }
