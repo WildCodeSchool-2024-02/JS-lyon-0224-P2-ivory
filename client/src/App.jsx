@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Formation from "./components/formation/Formation";
 import BannerLogo from "./components/banner_logo/BannerLogo";
@@ -13,6 +13,7 @@ const name = [
 ];
 
 function App() {
+
 	return (
 		<div>
 			<BannerLogo />
@@ -21,6 +22,7 @@ function App() {
 			<Footer />
 		</div>
 	);
+
 }
 
 export default App;
