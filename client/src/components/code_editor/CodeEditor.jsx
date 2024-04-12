@@ -3,8 +3,6 @@ import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import PropTypes from 'prop-types';
 
 /**
- * Note : Regarder le module npm et sont fonctionnement
- *
  * Affiche un exemple de code avec coloration syntaxique.
  *
  * Exemple du parent : <CodeEditor language="javascript" codeString={exempleDeCode} />
