@@ -15,12 +15,12 @@ const name = [
 function App() {
 
 	return (
-		<div>
+		<>
 			<BannerLogo />
 			<Navbar />
 			<Formation name={name} />
 			<Footer />
-		</div>
+		</>
 	);
 
 }
