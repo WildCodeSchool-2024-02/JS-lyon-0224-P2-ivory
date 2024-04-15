@@ -5,24 +5,22 @@ import Formation from "./components/formation/Formation";
 import BannerLogo from "./components/banner_logo/BannerLogo";
 
 const name = [
-	{ formation: "HTML" },
-	{ formation: "CSS" },
-	{ formation: "Javascript" },
-	{ formation: "React" },
-	{ formation: "Git" },
+  { formation: "HTML" },
+  { formation: "CSS" },
+  { formation: "Javascript" },
+  { formation: "React" },
+  { formation: "Git" },
 ];
 
 function App() {
-
-	return (
-		<>
-			<BannerLogo />
-			<Navbar />
-			<Formation name={name} />
-			<Footer />
-		</>
-	);
-
+  return (
+    <>
+      <BannerLogo />
+      <Navbar />
+      <Formation name={name} />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
