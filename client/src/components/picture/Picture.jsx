@@ -9,7 +9,7 @@ import styles from './pictureStyle.module.css';
  */
 
 export default function Picture({ src, alt }) {
-  return <img src={src} alt={alt} style={styles.picture} />;
+  return <img src={src} alt={alt} className={styles.picture} />;
 }
 
 Picture.propTypes = {
