@@ -1,9 +1,9 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Lesson from "./components/Lesson/Lesson"
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Formation from "./components/formation/Formation";
 import CodeEditor from "./components/code_editor/CodeEditor";
+import BannerLogo from "./components/banner_logo/BannerLogo";
 
 const name = [
   { formation: "HTML" },
@@ -23,13 +23,13 @@ const javascript = "javascript";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Lesson />
+    <>
+      <BannerLogo />
+      <Navbar />
       <Formation name={name} />
 	  <CodeEditor language={javascript}  codeString={exempleDeCode} />
       <Footer />
-    </div>
+    </>
   );
 }
 
