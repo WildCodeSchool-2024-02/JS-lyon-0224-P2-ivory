@@ -1,4 +1,4 @@
-import styles from "./NavbarStyle.module.css"
+import styles from "./Navbar-style.module.css"
 import Html from "../../assets/logos/HTML.png"
 import Css from "../../assets/logos/CSS.png"
 import Js from "../../assets/logos/JS.png"
