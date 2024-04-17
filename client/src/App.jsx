@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Formation from "./components/formation/Formation";
 import BannerLogo from "./components/banner_logo/BannerLogo";
 
+
 const name = [
   { formation: "HTML" },
   { formation: "CSS" },
