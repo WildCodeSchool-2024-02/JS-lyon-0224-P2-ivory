@@ -1,0 +1,38 @@
+.containerVideoSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.containerVideoSlider .previousButton {
+  color: transparent;
+  padding: 0.5rem;
+  border: solid black;
+  border-width: 0 0 0.25rem 0.25rem;
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 0.25rem;
+  width: 0.25rem;
+}
+
+.containerVideoSlider .nextButton {
+  color: transparent;
+  padding: 0.5rem;
+  border: solid black;
+  border-width: 0.25rem 0.25rem 0 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 0.25rem;
+  width: 0.25rem;
+}
+
+.containerVideo {
+  display: flex;
+}
+
+.containerVideo iframe {
+  place-self: center;
+  height: 60vh;
+  width: 60vw;
+}
