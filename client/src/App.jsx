@@ -48,7 +48,6 @@ function Layout() {
   return (
     <>
       <BannerLogo />
-      <SearchBar/>
       <Navbar />
       <Outlet />
       <Footer />
