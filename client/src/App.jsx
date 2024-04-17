@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Outlet} from "react-router-dom";
+import { Routes, Route, Outlet} from "react-router-dom";
 import "./App.css";
 
 import BannerLogo from "./components/banner_logo/BannerLogo";
@@ -35,7 +35,6 @@ import ReactPage from "./pages/ReactPage";
 
 function App() {
   return (
-	<Router>
 	  <Routes>
 	    <Route path="/" element={<Layout />}>
 	      <Route index element={<HomePage />} />
@@ -46,7 +45,6 @@ function App() {
           <Route path="react" element={<ReactPage />} />
 	    </Route>
 	  </Routes>
-	</Router>
   );
 }
 
