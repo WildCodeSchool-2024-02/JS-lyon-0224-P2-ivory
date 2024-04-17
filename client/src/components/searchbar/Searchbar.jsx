@@ -1,12 +1,10 @@
-import "./searchbar-style.module.css";
+import styles from "./searchbar-style-module.css";
 
-function SearchBar () {
+export default function SearchBar () {
   return (
-    <form>
+    <form className={styles.SearchBox}>
       <input type="text" placeholder="Recherche..."/>
       <button type="submit">Search</button>
     </form>
   );
 }
-
-export default SearchBar;

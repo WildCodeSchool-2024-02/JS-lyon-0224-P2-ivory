@@ -1,4 +1,4 @@
-form {
+.SearchBox {
   display: flex;
   justify-content: end;
 }
