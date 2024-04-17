@@ -13,10 +13,6 @@ import CSSPage from "./pages/CSSPage";
 import JavascriptPage from "./pages/JavascriptPage";
 import ReactPage from "./pages/ReactPage";
 
-
-// import Formation from "./components/formation/Formation";
-// import CodeEditor from "./components/code_editor/CodeEditor";
-
 // const name = [
 //   { formation: "HTML" },
 //   { formation: "CSS" },
