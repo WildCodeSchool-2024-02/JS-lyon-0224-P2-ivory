@@ -3,16 +3,19 @@ import styles from "./titleStyle.module.css"
 
 /**
  * Composant pour afficher un titre.
- * @param {{ text: string }} props - Props du composant.
- * @param {string} props.text - Le texte à afficher.
-*/
+ * @param {{ level: number, title: string }} props - Props du composant.
+ * @param {string} props.title - Le texte à afficher.
+ * @param {number} props.level - Niveau du titre (h1, h2, etc.).
+ */
 
-export default function Title({ title }) {
+export default function Title({ level, title }) {
+	const Tag = `h${level}`;
 	return (
-			<h2 className={styles.titleH2}>{title}</h2>
+		<Tag className={styles.title}>{title}</Tag>
 	)
 }
 
 Title.propTypes = {
+	level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
 	title: PropTypes.string.isRequired
 }
