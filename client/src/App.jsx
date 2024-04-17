@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Formation from "./components/formation/Formation";
 import CodeEditor from "./components/code_editor/CodeEditor";
 import BannerLogo from "./components/banner_logo/BannerLogo";
+import SearchBar from "./components/searchbar/Searchbar";
 
 const name = [
   { formation: "HTML" },
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <BannerLogo />
+      <SearchBar/>
       <Navbar />
       <Formation name={name} />
 	  <CodeEditor language={javascript}  codeString={exempleDeCode} />
