@@ -4,7 +4,7 @@ import "./App.css";
 import BannerLogo from "./components/banner_logo/BannerLogo";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Burguer from "./components/burger/Burger";
+import Burger from "./components/burger/Burger";
 
 // page components
 import HomePage from "./pages/HomePage";
@@ -49,7 +49,7 @@ function Layout() {
   return (
     <>
       <BannerLogo />
-      <Burguer/>
+      <Burger/>
       <Navbar />
       <Outlet />
       <Footer />
