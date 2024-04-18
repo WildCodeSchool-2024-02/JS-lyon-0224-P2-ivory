@@ -4,6 +4,7 @@ import "./App.css";
 import BannerLogo from "./components/banner_logo/BannerLogo";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Burger from "./components/burger/Burger";
 
 // page components
 import HomePage from "./pages/HomePage";
@@ -32,8 +33,9 @@ function Layout() {
   return (
     <>
       <BannerLogo />
-       <Navbar />
-       <Outlet />
+      <Burger/>
+      <Navbar />
+      <Outlet />
       <Footer />
     </>
   );
