@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import styles from "./textContentStyle.module.css";
 
 /**
@@ -12,5 +12,5 @@ export default function TextContent({ text }) {
 }
 
 TextContent.propTypes = {
-  text: PropTypes.string.isRequired
-}
+  text: PropTypes.string.isRequired,
+};

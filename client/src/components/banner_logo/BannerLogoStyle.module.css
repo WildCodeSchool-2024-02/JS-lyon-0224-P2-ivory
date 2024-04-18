@@ -1,10 +1,11 @@
 .containerBannerLogo {
   display: flex;
   height: 10vh;
-  width: 93vw;
+  width: 89vw;
   align-self: flex-end;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 .containerBannerLogo img {

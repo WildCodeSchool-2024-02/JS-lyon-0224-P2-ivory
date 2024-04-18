@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import styles from "./titleStyle.module.css"
+import PropTypes from "prop-types";
+import styles from "./titleStyle.module.css";
 
 /**
  * Composant pour afficher un titre.
@@ -9,13 +9,11 @@ import styles from "./titleStyle.module.css"
  */
 
 export default function Title({ level, title }) {
-	const Tag = `h${level}`;
-	return (
-		<Tag className={styles.title}>{title}</Tag>
-	)
+  const Tag = `h${level}`;
+  return <Tag className={styles.title}>{title}</Tag>;
 }
 
 Title.propTypes = {
-	level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-	title: PropTypes.string.isRequired
-}
+  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
+  title: PropTypes.string.isRequired,
+};
