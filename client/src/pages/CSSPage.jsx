@@ -3,4 +3,3 @@ export default function CSSPage() {
 		<h1>Css</h1>
 	)
 }
-
