@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom"
-// import { useParams } from "react-router-dom"
 import styles from "./NavbarStyle.module.css"
 import Html from "../../assets/logos/HTML.png"
 import Css from "../../assets/logos/CSS.png"
@@ -9,8 +8,6 @@ import Git from "../../assets/logos/GIT.png"
 
 
 function NavBar() {
-  // const{} = useParams
-    
   return (
     <nav className={styles.navbar}>
       <ul className={styles.list}>
@@ -22,7 +19,7 @@ function NavBar() {
 
       </ul>
     </nav>
-  ); 
+  );
 }
 
 
