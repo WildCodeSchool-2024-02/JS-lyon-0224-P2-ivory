@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom"
 import {useState} from "react"
 import { FaTimes, FaBars } from "react-icons/fa"
-import styles from "./Burger-style.module.css"
+import styles from "./BurgerStyle.module.css"
 import Html from "../../assets/logos/HTML.png"
 import Css from "../../assets/logos/CSS.png"
 import Js from "../../assets/logos/JS.png"
 import Reactimg from "../../assets/logos/REACT.png"
 import Git from "../../assets/logos/GIT.png"
 
-function Burguer () {
+function Burger () {
     const [burger, setBurger] =useState(false)
 
     const changeBurger = () =>
@@ -19,18 +20,18 @@ return (
     <div className={styles.hamburger}>
       <div>
          <button className={styles.buttonBurger} type="button" onClick={changeBurger}>
-            {burger ? <FaTimes size={30} /> : <FaBars size={30} />}
+            {burger === true ? <FaTimes size={30} /> : <FaBars size={30} />}
         </button>
       </div>
     
       {burger === true && (
       <nav className={styles.navbar}>
       <ul className={styles.list}>
-        <li className={styles.element}><img className={styles.logo} src={Html} alt="logo html"/><a className={styles.link} href="/">Html</a></li>
-        <li className={styles.element}><img className={styles.logo} src={Css} alt="logo css"/><a  className={styles.link} href="/">Css</a></li>
-        <li className={styles.element}><img className={styles.logo} src={Js} alt="logo Javascript"/><a className={styles.link} href="/">JS</a></li>
-        <li className={styles.element}><img className={styles.logo}src={Reactimg} alt="logo react"/><a className={styles.link} href="/">React</a></li>
-        <li className={styles.element}><img className={styles.logo}src={Git} alt="logo git"/><a className={styles.link} href="/">Git</a></li>
+        <li className={styles.element}><Link className={styles.link} to="/html"><img className={styles.logo} src={Html} alt="logo html"/>Html</Link></li>
+        <li className={styles.element}><Link  className={styles.link} to="/css"><img className={styles.logo} src={Css} alt="logo css"/>Css</Link></li>
+        <li className={styles.element}><Link className={styles.link} to="/javascript"><img className={styles.logo} src={Js} alt="logo Javascript"/>JS</Link></li>
+        <li className={styles.element}><Link className={styles.link} to="/react"><img className={styles.logo}src={Reactimg} alt="logo react"/>React</Link></li>
+        <li className={styles.element}><Link className={styles.link} to="/git"><img className={styles.logo}src={Git} alt="logo git"/>Git</Link></li>
 
       </ul>
     </nav>)}
@@ -40,4 +41,4 @@ return (
 
 }
 
-export default Burguer; 
+export default Burger; 
