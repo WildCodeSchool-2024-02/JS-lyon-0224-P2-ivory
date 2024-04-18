@@ -31,16 +31,16 @@ import ReactPage from "./pages/ReactPage";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="git" element={<GitPage />} />
-        <Route path="html" element={<HTMLPage />} />
-        <Route path="css" element={<CSSPage />} />
-        <Route path="javascript" element={<JavascriptPage />} />
-        <Route path="react" element={<ReactPage />} />
-      </Route>
-    </Routes>
+	  <Routes>
+	    <Route path="/*" element={<Layout />}>
+	      <Route index element={<HomePage />} />
+	  	  <Route path="git" element={<GitPage />} />
+          <Route path="html" element={<HTMLPage />} />
+          <Route path="css" element={<CSSPage />} />
+          <Route path="javascript" element={<JavascriptPage />} />
+          <Route path="react" element={<ReactPage />} />
+	    </Route>
+	  </Routes>
   );
 }
 
