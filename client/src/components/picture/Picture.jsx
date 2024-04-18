@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import styles from './pictureStyle.module.css';
+import PropTypes from "prop-types";
+import styles from "./pictureStyle.module.css";
 
 /**
  * Composant pour afficher une image.
@@ -14,5 +14,5 @@ export default function Picture({ src, alt }) {
 
 Picture.propTypes = {
   src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
+  alt: PropTypes.string.isRequired,
 };

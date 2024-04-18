@@ -1,6 +1,6 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 /**
  * Affiche un exemple de code avec coloration syntaxique.
