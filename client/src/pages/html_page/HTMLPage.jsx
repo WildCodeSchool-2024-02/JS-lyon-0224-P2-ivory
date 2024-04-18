@@ -3,7 +3,7 @@ import TextContent from "../../components/text_content/TextContent";
 import Title from "../../components/title/Title";
 import VideoSlider from "../../components/video_slider/VideoSlider";
 
-import styles from './htmlPageStyle.module.css'
+import styles from "./htmlPageStyle.module.css";
 
 const data = {
   mainTitle: "HTML 01",
