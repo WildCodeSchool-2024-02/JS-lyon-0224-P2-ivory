@@ -1,6 +1,8 @@
-import Title from "../components/title/Title";
-import TextContent from "../components/text_content/TextContent";
-import CodeEditor from "../components/code_editor/CodeEditor";
+import Title from "../../components/title/Title";
+import TextContent from "../../components/text_content/TextContent";
+import CodeEditor from "../../components/code_editor/CodeEditor";
+
+import styles from "./gitPageStyle.module.css";
 
 const gitCommands = [
   {
@@ -90,12 +92,12 @@ const gitCommands = [
 
 export default function GitPage() {
   return (
-    <div>
-      <Title level="1" title="Introduction à Git" />
+    <div className={styles.gitPage}>
+      <Title level="2" title="Introduction à Git" />
       <TextContent text="Git is a distributed version control system, used to track changes in files and coordinate the work that multiple people do on shared files." />
       {gitCommands.map(({ command, description, code }) => (
         <div key={command}>
-          <Title level="2" title={command} />
+          <Title level="3" title={command} />
           <TextContent text={description} />
           <CodeEditor language="bash" codeString={code} />
         </div>
