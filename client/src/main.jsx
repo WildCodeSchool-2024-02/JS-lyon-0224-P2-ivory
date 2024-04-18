@@ -12,41 +12,40 @@ import JavascriptPage from "./pages/JavascriptPage";
 import ReactPage from "./pages/ReactPage";
 
 const router = createBrowserRouter([
-	{
-		element: <App />,
-		children: [
-			{
-				path: "/",
-				element: <HomePage />,
-			},
-			{
-				path: "/git",
-				element: <GitPage />,
-			},
-			{
-				path: "/html",
-				element: <HTMLPage />,
-			},
-			{
-				path: "/css",
-				element: <CSSPage />,
-			},
-			{
-				path: "/javascript",
-				element: <JavascriptPage />,
-			},
-			{
-				path: "/react",
-				element: <ReactPage />,
-			},
-		],
-	},
+  {
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/git",
+        element: <GitPage />,
+      },
+      {
+        path: "/html",
+        element: <HTMLPage />,
+      },
+      {
+        path: "/css",
+        element: <CSSPage />,
+      },
+      {
+        path: "/javascript",
+        element: <JavascriptPage />,
+      },
+      {
+        path: "/react",
+        element: <ReactPage />,
+      },
+    ],
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-	<React.StrictMode>
-		<RouterProvider router={router} />
-	</React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
-
