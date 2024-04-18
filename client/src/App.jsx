@@ -1,39 +1,23 @@
-import { Routes, Route, Outlet} from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import "./App.css";
 
 import BannerLogo from "./components/banner_logo/BannerLogo";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Burguer from "./components/burger/Burger";
+import Burger from "./components/burger/Burger";
 
 // page components
 import HomePage from "./pages/HomePage";
 import GitPage from "./pages/GitPage";
-import HTMLPage from "./pages/HTMLPage";
+import HTMLPage from "./pages/html_page/HTMLPage";
 import CSSPage from "./pages/CSSPage";
 import JavascriptPage from "./pages/JavascriptPage";
 import ReactPage from "./pages/ReactPage";
 
-// const name = [
-//   { formation: "HTML" },
-//   { formation: "CSS" },
-//   { formation: "Javascript" },
-//   { formation: "React" },
-//   { formation: "Git" },
-// ];
-
-// const exempleDeCode = `
-// function sayHello() {
-//   console.log("Hello, world!");
-// }
-// `;
-
-// const javascript = "javascript";
-
 function App() {
   return (
 	  <Routes>
-	    <Route path="/" element={<Layout />}>
+	    <Route path="/*" element={<Layout />}>
 	      <Route index element={<HomePage />} />
 	  	  <Route path="git" element={<GitPage />} />
           <Route path="html" element={<HTMLPage />} />
@@ -49,7 +33,7 @@ function Layout() {
   return (
     <>
       <BannerLogo />
-      <Burguer/>
+      <Burger/>
       <Navbar />
       <Outlet />
       <Footer />
