@@ -13,22 +13,6 @@ import CSSPage from "./pages/CSSPage";
 import JavascriptPage from "./pages/JavascriptPage";
 import ReactPage from "./pages/ReactPage";
 
-// const name = [
-//   { formation: "HTML" },
-//   { formation: "CSS" },
-//   { formation: "Javascript" },
-//   { formation: "React" },
-//   { formation: "Git" },
-// ];
-
-// const exempleDeCode = `
-// function sayHello() {
-//   console.log("Hello, world!");
-// }
-// `;
-
-// const javascript = "javascript";
-
 function App() {
   return (
 	  <Routes>
