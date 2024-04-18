@@ -1,0 +1,46 @@
+.gitPage {
+  display: flex;
+  width: 92vw;
+  flex-direction: column;
+  place-self: flex-end;
+}
+
+.gitPage h2 {
+  font-size: 6rem;
+  place-self: center;
+}
+
+.gitPage h3 {
+  font-size: 3rem;
+  padding: 0.75rem;
+}
+
+.gitPage p {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.gitPage img {
+  place-self: center;
+  width: 40vw;
+}
+
+@media screen and (max-width: 450px) {
+  .gitPage {
+    width: 100vw;
+  }
+
+  .gitPage h2 {
+    font-size: 3rem;
+  }
+  .gitPage h3 {
+    font-size: 2rem;
+  }
+  .gitPage p {
+    font-size: 1rem;
+  }
+
+  .gitPage pre {
+    width: 80vw;
+  }
+}

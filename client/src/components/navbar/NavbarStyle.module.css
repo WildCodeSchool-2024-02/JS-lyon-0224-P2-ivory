@@ -29,9 +29,16 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
 
 .logo {
   height: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    display: none;
+  }
 }
