@@ -32,7 +32,7 @@ import ReactPage from "./pages/ReactPage";
 function App() {
   return (
 	  <Routes>
-	    <Route path="/" element={<Layout />}>
+	    <Route path="/*" element={<Layout />}>
 	      <Route index element={<HomePage />} />
 	  	  <Route path="git" element={<GitPage />} />
           <Route path="html" element={<HTMLPage />} />
