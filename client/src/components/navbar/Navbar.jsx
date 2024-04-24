@@ -14,6 +14,7 @@ function NavBar() {
         <li className={styles.element}>
           <Link className={styles.link} to="/">
             <FaSchool className={styles.home} size={30}/>
+            Home
           </Link>
           </li>
         <li className={styles.element}>

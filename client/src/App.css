@@ -104,6 +104,7 @@ section {
 body {
   line-height: 1;
   width: 100vw;
+  min-height: 100vh;
 }
 
 .main {
@@ -139,7 +140,13 @@ ul {
 .dark div {
   background-color: #121314;
 }
-
+.dark button {
+  background-color: #121314;
+  color: #fffcf4;
+}
+.light button {
+  background-color: #fffcf4;
+}
 .dark div button {
   background-color: #121314;
 }

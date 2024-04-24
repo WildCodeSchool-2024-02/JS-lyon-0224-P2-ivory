@@ -39,6 +39,7 @@
 
 .home {
   color: #ffc736;
+  place-self: center;
 }
 
 @media screen and (max-width: 450px) {
