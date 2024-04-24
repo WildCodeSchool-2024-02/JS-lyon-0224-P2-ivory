@@ -7,7 +7,7 @@ import App from "./App";
 import HomePage from "./pages/HomePage";
 import GitPage from "./pages/git_page/GitPage";
 import HTMLPage from "./pages/html_page/HTMLPage";
-import CSSPage from "./pages/CSSPage";
+import CSSPage from "./pages/css_page/CssPage";
 import JavascriptPage from "./pages/JavascriptPage";
 import ReactPage from "./pages/ReactPage";
 
