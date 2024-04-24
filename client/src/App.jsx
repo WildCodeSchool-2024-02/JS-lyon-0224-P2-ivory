@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 import "./App.css";
+import { ThemeContext } from "./context/ThemeContext";
 
 import BannerLogo from "./components/banner_logo/BannerLogo";
 import Navbar from "./components/navbar/Navbar";
@@ -13,6 +15,7 @@ import HTMLPage from "./pages/html_page/HTMLPage";
 import CSSPage from "./pages/CSSPage";
 import JavascriptPage from "./pages/JavascriptPage";
 import ReactPage from "./pages/ReactPage";
+import ToggleButton from "./components/toggle_theme_button/ToggleThemeButton";
 
 function App() {
   return (
@@ -30,14 +33,18 @@ function App() {
 }
 
 function Layout() {
+  const { themeMode } = useContext(ThemeContext);
+
+
   return (
-    <>
+    <div className={`${themeMode}`}>
+      <ToggleButton/>
       <BannerLogo />
       <Burger />
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 }
 

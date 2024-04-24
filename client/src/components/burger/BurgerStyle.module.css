@@ -1,9 +1,21 @@
+.buttonBurger {
+  display: none;
+}
 @media screen and (max-width: 450px) {
-  .buttonBurger {
+  .hamburger {
     background-color: #fffcf4;
+  }
+
+  .buttonBurger {
+    display: flex;
     border: none;
+    background-color: #fffcf4;
     color: #ffc736;
     cursor: pointer;
+  }
+
+  .dark .buttonBurger {
+    background-color: #121314;
   }
 
   .list {

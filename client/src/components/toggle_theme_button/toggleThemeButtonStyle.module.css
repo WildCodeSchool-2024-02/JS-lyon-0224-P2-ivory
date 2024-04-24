@@ -1,0 +1,5 @@
+.togglebutton {
+  display: flex;
+  place-self: flex-end;
+  margin: 1rem;
+}

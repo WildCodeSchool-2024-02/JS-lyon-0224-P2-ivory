@@ -15,7 +15,7 @@ function Burger() {
 
   return (
     <div className={styles.hamburger}>
-      <div>
+      <div className="containerButtonBurger">
         <button
           className={styles.buttonBurger}
           type="button"
