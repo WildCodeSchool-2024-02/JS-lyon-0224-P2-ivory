@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fffcf4;
+  /* background: #fffcf4; */
   border-style: none;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -39,6 +39,7 @@
 
 .home {
   color: #ffc736;
+  place-self: center;
 }
 
 @media screen and (max-width: 450px) {
