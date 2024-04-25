@@ -2,6 +2,8 @@ import styles from "./reactpageStyle.module.css";
 import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
+import VideoSearch from "../../components/video_search/VideoSearch";
+
 
 
 
@@ -33,6 +35,9 @@ const data = {
   structureText: "Run this command to move to the my-react-app directory A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar. :",
   structureImageSrc: "../src/assets/React APP.png",
 };
+
+const videoIds = ["x8l9cjx", "x7szvlo"];
+
 export default function REACTPage() {
   return (
     <div className={styles.REACTPage}>
@@ -51,6 +56,7 @@ export default function REACTPage() {
       <Title level={data.structureTitleLevel} title={data.structureTitle} />
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
+      <VideoSearch videoIds={videoIds}/>
       </div>
   );
 }
