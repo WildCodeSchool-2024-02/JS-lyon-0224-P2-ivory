@@ -1,12 +1,11 @@
 .REACTPage {
   display: flex;
-  width: 92vw;
+  width: 91vw;
   flex-direction: column;
   place-self: flex-end;
 }
 .REACTPage h3 {
   font-size: 6rem;
-  place-self: center;
 }
 
 .REACTPage h4 {

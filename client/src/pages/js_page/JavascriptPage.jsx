@@ -2,6 +2,7 @@ import styles from "./JavascriptPageStyle.module.css";
 import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
+import VideoSearch from "../../components/video_search/VideoSearch";
 
 const data = {
   mainTitle: "JAVASCRIPT",
@@ -32,6 +33,9 @@ const data = {
   structureText: "This is an example of a basic Javascript Page structure",
   structureImageSrc: "../src/assets/structure.png",
 };
+
+const videoIds = ["x8r4uem", "x8rbfc5"];
+
 export default function JavascriptPage() {
   return (
     <div className={styles.JavascriptPage}>
@@ -50,7 +54,8 @@ export default function JavascriptPage() {
       <Title level={data.structureTitleLevel} title={data.structureTitle} />
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
-      
+      <Title level="3" title="Ressources Videos" />
+			<VideoSearch videoIds={videoIds}/>
     </div>
   );
 }
