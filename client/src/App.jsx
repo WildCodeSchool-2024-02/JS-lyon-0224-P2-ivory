@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 import Burger from "./components/burger/Burger";
 
 // page components
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/homepage/HomePage";
 import GitPage from "./pages/git_page/GitPage";
 import HTMLPage from "./pages/html_page/HTMLPage";
 import CSSPage from "./pages/css_page/CssPage";
