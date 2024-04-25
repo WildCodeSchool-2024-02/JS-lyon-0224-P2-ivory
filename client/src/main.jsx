@@ -5,12 +5,12 @@ import App from "./App";
 import DarkModeProvider from "./context/ThemeContext";
 
 // page components
-import HomePage from "./pages/HomePage";
+import HomePage from "./components/formation/Formation";
 import GitPage from "./pages/git_page/GitPage";
 import HTMLPage from "./pages/html_page/HTMLPage";
 import CSSPage from "./pages/css_page/CssPage";
 import JavascriptPage from "./pages/js_page/JavascriptPage";
-import ReactPage from "./pages/ReactPage";
+import ReactPage from "./pages/react_page/ReactPage";
 
 const router = createBrowserRouter([
   {

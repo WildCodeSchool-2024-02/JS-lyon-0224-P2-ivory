@@ -9,12 +9,12 @@ import Footer from "./components/footer/Footer";
 import Burger from "./components/burger/Burger";
 
 // page components
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/homepage/HomePage";
 import GitPage from "./pages/git_page/GitPage";
 import HTMLPage from "./pages/html_page/HTMLPage";
 import CSSPage from "./pages/css_page/CssPage";
 import JavascriptPage from "./pages/js_page/JavascriptPage";
-import ReactPage from "./pages/ReactPage";
+import ReactPage from "./pages/react_page/ReactPage";
 import ToggleButton from "./components/toggle_theme_button/ToggleThemeButton";
 
 function App() {
@@ -35,10 +35,9 @@ function App() {
 function Layout() {
   const { themeMode } = useContext(ThemeContext);
 
-
   return (
     <div className={`${themeMode}`}>
-      <ToggleButton/>
+      <ToggleButton />
       <BannerLogo />
       <Burger />
       <Navbar />
