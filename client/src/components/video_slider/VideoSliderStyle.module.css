@@ -8,7 +8,7 @@
 .containerVideoSlider .previousButton {
   color: transparent;
   padding: 0.5rem;
-  border: solid black;
+  border: solid #ffc736;
   border-width: 0 0 0.25rem 0.25rem;
   display: inline-block;
   transform: rotate(45deg);
@@ -19,7 +19,7 @@
 .containerVideoSlider .nextButton {
   color: transparent;
   padding: 0.5rem;
-  border: solid black;
+  border: solid #ffc736;
   border-width: 0.25rem 0.25rem 0 0;
   display: inline-block;
   transform: rotate(45deg);
