@@ -54,7 +54,7 @@ export default function JavascriptPage() {
       <Title level={data.structureTitleLevel} title={data.structureTitle} />
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
-      <Title level="3" title="Ressources Videos" />
+      <Title level="4" title="Ressources Videos" />
 			<VideoSearch videoIds={videoIds}/>
     </div>
   );

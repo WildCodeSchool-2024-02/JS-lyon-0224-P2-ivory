@@ -105,7 +105,7 @@ export default function GitPage() {
 					<CodeEditor language="bash" codeString={code} />
 				</div>
 			))}
-			<Title level="3" title="Ressources Videos" />
+			<Title level="4" title="Ressources Videos" />
 			<VideoSearch videoIds={videoIds}/>
 		</div>
 	);
