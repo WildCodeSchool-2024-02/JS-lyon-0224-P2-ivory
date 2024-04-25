@@ -1,7 +1,7 @@
 import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
-import VideoSlider from "../../components/video_slider/VideoSlider";
+import VideoSearch from "../../components/video_search/VideoSearch";
 import styles from "./cssPageStyle.module.css"
 
 const css= {
@@ -29,8 +29,8 @@ semicolon. The following is the basic syntax:`,
   secondElementLevel: 4,
   secondElementText: `In the <head> section of your HTML document, use the <link> tag to link your CSS file. This establishes the connection between your HTML and CSS files.`,
 };
-
-export default function HTMLPage() {
+const videoIds = ["xoe5tu", "x2mqme2"];
+export default function CSSPage() {
   return (
     <div className={styles.cssPage}>
       <Title level={css.mainTitleLevel} title={css.mainTitle} />
@@ -42,7 +42,7 @@ export default function HTMLPage() {
       <Picture src={css.elementsImage} alt={css.elementsImageAltAlt} />
       <Title level={css.secondElementLevel} title={css.secondElementTitle} />
       <TextContent text={css.secondElementText} />
-      <VideoSlider /> 
+      <VideoSearch videoIds={videoIds}/>
     </div>
   );
 }
