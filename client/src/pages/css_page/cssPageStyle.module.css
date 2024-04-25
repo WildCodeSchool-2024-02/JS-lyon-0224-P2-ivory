@@ -1,6 +1,6 @@
 .cssPage {
   display: flex;
-  width: 92vw;
+  width: 91vw;
   flex-direction: column;
   place-self: flex-end;
 }
