@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import "./formation-style.css";
-import Lesson from "../lesson/Lesson";
 
 function Formation({ name }) {
   const [show, setShow] = useState(false);
@@ -16,7 +15,6 @@ function Formation({ name }) {
           {element.formation}
         </button>
       ))}
-      {show === true ? <Lesson /> : null}
     </div>
   );
 }
