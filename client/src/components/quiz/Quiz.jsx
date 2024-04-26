@@ -50,7 +50,7 @@ export default function Quiz({ questions }) {
 
 	return (
 		<div className={styles.quizContainer}>
-			<Title level="2" title="Notions Quiz" />
+			<Title level="4" title="Notions Quiz" />
 			<TextContent text={questions[currentQuestion].questionText} />
 			<div className={styles.answerSection}>
 				{questions[currentQuestion].answerOptions.map((option, index) => (
