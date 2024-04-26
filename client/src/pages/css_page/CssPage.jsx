@@ -2,9 +2,9 @@ import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
 import VideoSearch from "../../components/video_search/VideoSearch";
-import styles from "./cssPageStyle.module.css"
+import styles from "./cssPageStyle.module.css";
 
-const css= {
+const css = {
   mainTitle: "CSS 01",
   mainTitleLevel: 3,
   introTitle: "CSS Introduction",
@@ -23,8 +23,8 @@ Symply, we can say HTML is a website's body, and CSS is its clothes`,
   elementsText: `First, you create a new file.css . CSS rules are defined as a property name followed by a colon and then a property value.
 Individual rules are terminated by semicolons, with the final rule having an optional
 semicolon. The following is the basic syntax:`,
-  elementsImage:"../src/assets/css-rule-schema.jpg",
-  elementsImageAlt:"exemple schema",
+  elementsImage: "../src/assets/css-rule-schema.jpg",
+  elementsImageAlt: "exemple schema",
   secondElementTitle: "How to apply CSS to HTML?",
   secondElementLevel: 4,
   secondElementText: `In the <head> section of your HTML document, use the <link> tag to link your CSS file. This establishes the connection between your HTML and CSS files.`,
@@ -43,7 +43,7 @@ export default function CSSPage() {
       <Title level={css.secondElementLevel} title={css.secondElementTitle} />
       <TextContent text={css.secondElementText} />
       <Title level="4" title="Ressources Videos" />
-      <VideoSearch videoIds={videoIds}/>
+      <VideoSearch videoIds={videoIds} />
     </div>
   );
 }
