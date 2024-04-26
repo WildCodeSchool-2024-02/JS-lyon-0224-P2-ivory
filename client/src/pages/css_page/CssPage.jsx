@@ -42,6 +42,7 @@ export default function CSSPage() {
       <Picture src={css.elementsImage} alt={css.elementsImageAltAlt} />
       <Title level={css.secondElementLevel} title={css.secondElementTitle} />
       <TextContent text={css.secondElementText} />
+      <Title level="4" title="Ressources Videos" />
       <VideoSearch videoIds={videoIds}/>
     </div>
   );
