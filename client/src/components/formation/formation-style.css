@@ -16,8 +16,6 @@
   place-items: center;
   text-decoration-color: #ffc736;
   font-size: 40px;
-  color: #5d7081;
   border-radius: 0.5rem;
-  border-color: #5d7081;
-  border: solid 0.25rem;
+  border: solid 0.15rem;
 }
