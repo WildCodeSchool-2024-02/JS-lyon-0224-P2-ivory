@@ -6,13 +6,13 @@ export const ThemeContext = createContext();
 export default function ThemeProvider({ children }) {
   const [themeMode, setThemeMode] = useState("light");
 
-
-  const memoTheme = useMemo(() => ({themeMode , setThemeMode}), [themeMode, setThemeMode])
+  const memoTheme = useMemo(
+    () => ({ themeMode, setThemeMode }),
+    [themeMode, setThemeMode]
+  );
 
   return (
-    <ThemeContext.Provider value={memoTheme}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={memoTheme}>{children}</ThemeContext.Provider>
   );
 }
 

@@ -13,10 +13,10 @@ function NavBar() {
       <ul className={styles.list}>
         <li className={styles.element}>
           <Link className={styles.link} to="/">
-            <FaSchool className={styles.home} size={30}/>
+            <FaSchool className={styles.home} size={30} />
             Home
           </Link>
-          </li>
+        </li>
         <li className={styles.element}>
           <Link className={styles.link} to="/html">
             <img className={styles.logo} src={Html} alt="logo html" />

@@ -4,9 +4,6 @@ import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
 import VideoSearch from "../../components/video_search/VideoSearch";
 
-
-
-
 const data = {
   mainTitle: "REACT",
   mainTitleLevel: 3,
@@ -27,12 +24,14 @@ const data = {
   browserTitleLevel: 4,
 
   browserText: `JavaScript library used for creating user interfaces. Most of engineers prefer not to call it a framework since it gives much freedom than Vue or Angular. The seven year old, open source framework provides a relatively new technology. React.js allows data and interface to be updated independently.`,
-  exampleDom: "These are some of the key aspects of React elements. They provide a flexible and declarative way to define the UI structure of your React applications.:",
+  exampleDom:
+    "These are some of the key aspects of React elements. They provide a flexible and declarative way to define the UI structure of your React applications.:",
   DomImageSrc: "../src/assets/react structure.png",
 
   structureTitle: "Run the React Application",
   structureTitleLevel: 4,
-  structureText: "Run this command to move to the my-react-app directory A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar. :",
+  structureText:
+    "Run this command to move to the my-react-app directory A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar. :",
   structureImageSrc: "../src/assets/React APP.png",
 };
 
@@ -57,29 +56,7 @@ export default function REACTPage() {
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
       <Title level="4" title="Ressources Videos" />
-      <VideoSearch videoIds={videoIds}/>
-      </div>
+      <VideoSearch videoIds={videoIds} />
+    </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

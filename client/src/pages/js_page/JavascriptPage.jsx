@@ -18,7 +18,6 @@ const data = {
   elementsText: `JavaScript is a fundamental technology for building modern web applications and has a significant impact on the way content is presented and interacted with on the internet. 
 	Client-Side Language,Cross-Platform,Dynamic Typing,Prototype-based & Event-Driven and Asynchronous. `,
 
-  
   captionIntroImage: "Examples of javascriot with anothers languages :",
   tagTableSrc: "../src/assets/JS structure.png",
   tagTableAlt: "tag_example",
@@ -55,7 +54,7 @@ export default function JavascriptPage() {
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
       <Title level="4" title="Ressources Videos" />
-			<VideoSearch videoIds={videoIds}/>
+      <VideoSearch videoIds={videoIds} />
     </div>
   );
 }
