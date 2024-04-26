@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import TextContent from "../text_content/TextContent";
 import Title from "../title/Title";
-import styles from "./QuizStyle.module.css";
+import styles from "./quizStyle.module.css";
 
 /**
  * Calcule la couleur de fond pour un bouton de réponse.
