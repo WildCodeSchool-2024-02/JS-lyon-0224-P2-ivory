@@ -3,6 +3,7 @@ import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
 import VideoSearch from "../../components/video_search/VideoSearch";
+import Quiz from "../../components/quiz/Quiz";
 
 const data = {
   mainTitle: "JAVASCRIPT",
@@ -33,6 +34,50 @@ const data = {
   structureImageSrc: "../src/assets/structure.png",
 };
 
+
+const questions = [
+  {
+    questionText: "How do you create a function in JavaScript? ?",
+    answerOptions: [
+      { answerText: "function myFunction()", isCorrect: true },
+      { answerText: "function:myFunction()", isCorrect: false },
+      { answerText: "create myFunction()", isCorrect: false },
+      { answerText: "function = myFunction()", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What is the output of this code ? console.log(typeof null);",
+    answerOptions: [
+      { answerText: "null", isCorrect: false },
+      { answerText: "object", isCorrect: true },
+      { answerText: "undefined", isCorrect: false },
+      { answerText: "number", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "Which method is used to add an element at the end of an array?",
+    answerOptions: [
+      { answerText: "array.shift(element)", isCorrect: false },
+      { answerText: "array.pop(element)", isCorrect: false },
+      { answerText: "array.push(element)", isCorrect: true },
+      { answerText: "array.unshift(element)", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "How can a JavaScript variable be declared conditionally?",
+    answerOptions: [
+      { answerText: "condition(var x)", isCorrect: false },
+      { answerText: "var x = (condition) ? value1 : value2", isCorrect: true },
+      { answerText: "var x if (condition)", isCorrect: false },
+      { answerText: "if (condition) var x", isCorrect: true },
+    ],
+  },
+];
+
+
 const videoIds = ["x8r4uem", "x8rbfc5"];
 
 export default function JavascriptPage() {
@@ -53,6 +98,7 @@ export default function JavascriptPage() {
       <Title level={data.structureTitleLevel} title={data.structureTitle} />
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
+      <Quiz questions={questions} />
       <Title level="4" title="Ressources Videos" />
       <VideoSearch videoIds={videoIds} />
     </div>
