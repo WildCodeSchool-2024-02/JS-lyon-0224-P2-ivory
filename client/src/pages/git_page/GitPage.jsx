@@ -137,20 +137,20 @@ const questions = [
 const videoIds = ["x1bfcgl", "xf22vs"];
 
 export default function GitPage() {
-	return (
-		<div className={styles.gitPage}>
-			<Title level="2" title="Introduction à Git" />
-			<TextContent text="Git is a distributed version control system, used to track changes in files and coordinate the work that multiple people do on shared files." />
-			{gitCommands.map(({ command, description, code }) => (
-				<div key={command}>
-					<Title level="3" title={command} />
-					<TextContent text={description} />
-					<CodeEditor language="bash" codeString={code} />
-				</div>
-			))}
-			<Quiz questions={questions}/>
-			<Title level="4" title="Ressources Videos" />
-			<VideoSearch videoIds={videoIds}/>
-		</div>
-	);
+  return (
+    <div className={styles.gitPage}>
+      <Title level="2" title="Introduction à Git" />
+      <TextContent text="Git is a distributed version control system, used to track changes in files and coordinate the work that multiple people do on shared files." />
+      {gitCommands.map(({ command, description, code }) => (
+        <div key={command}>
+          <Title level="3" title={command} />
+          <TextContent text={description} />
+          <CodeEditor language="bash" codeString={code} />
+        </div>
+      ))}
+      <Quiz questions={questions} />
+      <Title level="4" title="Ressources Videos" />
+      <VideoSearch videoIds={videoIds} />
+    </div>
+  );
 }
