@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import TextContent from "../text_content/TextContent";
 import Title from "../title/Title";
-import styles from "./quizStyle.module.css";
+import styles from "./QuizStyle.module.css";
 
 /**
  * Calcule la couleur de fond pour un bouton de réponse.
@@ -50,7 +50,7 @@ export default function Quiz({ questions }) {
 
 	return (
 		<div className={styles.quizContainer}>
-			<Title level="2" title="Notions Quiz" />
+			<Title level="4" title="Notions Quiz" />
 			<TextContent text={questions[currentQuestion].questionText} />
 			<div className={styles.answerSection}>
 				{questions[currentQuestion].answerOptions.map((option, index) => (
