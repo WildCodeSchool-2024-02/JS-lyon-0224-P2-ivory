@@ -11,7 +11,7 @@ const formation=[
   link:"/css"
 },
 {
-  name:"JavaScrip",
+  name:"JavaScript",
   link: "/javascript"
 },
 {
