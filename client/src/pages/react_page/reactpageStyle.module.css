@@ -1,44 +1,44 @@
-.REACTPage {
+.reactPage {
   display: flex;
   width: 91vw;
   flex-direction: column;
   place-self: flex-end;
 }
-.REACTPage h3 {
+.reactPage h3 {
   font-size: 6rem;
   place-self: center;
 }
 
-.REACTPage h4 {
+.reactPage h4 {
   font-size: 3rem;
   padding: 0.75rem;
 }
 
-.REACTPage p {
+.reactPage p {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 
-.REACTPage img {
+.reactPage img {
   place-self: center;
   width: 40vw;
 }
 
 @media screen and (max-width: 450px) {
-  .REACTPage {
+  .reactPage {
     width: 100vw;
     place-self: center;
   }
-  .REACTPage h3 {
+  .reactPage h3 {
     font-size: 4rem;
   }
-  .REACTPage h4 {
+  .reactPage h4 {
     font-size: 2rem;
   }
-  .REACTPage p {
+  .reactPage p {
     font-size: 1rem;
   }
-  .REACTPage iframe {
+  .reactPage iframe {
     height: 15vh;
     width: 60vw;
   }
