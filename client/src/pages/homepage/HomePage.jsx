@@ -1,4 +1,3 @@
-import "./homePageStyle.module.css";
 import { Link } from "react-router-dom";
 
 const formation = [
