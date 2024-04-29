@@ -145,6 +145,23 @@ ul {
   background-color: #fffcf4;
 }
 
+.light .questionAnswer button {
+  background-color: #121314;
+}
+
+.dark .questionAnswer button {
+  background-color: #fffcf4;
+  color: #121314;
+}
+.light #nextButton {
+  background-color: #121314;
+}
+
+.dark #nextButton {
+  background-color: #fffcf4;
+  color: #121314;
+}
+
 .dark div button {
   background-color: #121314;
 }

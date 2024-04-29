@@ -33,7 +33,7 @@ const data = {
   structureTitleLevel: 4,
   structureText:
     "Run this command to move to the my-react-app directory A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar. :",
-  structureImageSrc: "../src/assets/React_APP.png",
+  structureImageSrc: "../src/assets/React_App.png",
 };
 
 const questions = [
