@@ -2,6 +2,7 @@ import Picture from "../../components/picture/Picture";
 import TextContent from "../../components/text_content/TextContent";
 import Title from "../../components/title/Title";
 import VideoSearch from "../../components/video_search/VideoSearch";
+import Quiz from "../../components/quiz/Quiz";
 
 import styles from "./htmlPageStyle.module.css";
 
@@ -40,6 +41,47 @@ const data = {
   videoTitleLevel: 4,
 };
 
+const questions = [
+  {
+    questionText: "What HTML stands for ?",
+    answerOptions: [
+      { answerText: "HyperText Markup Language", isCorrect: true },
+      { answerText: "HyperTheory Marked Lexical", isCorrect: false },
+      { answerText: "HyperText Matching Lines", isCorrect: false },
+      { answerText: "HyperTouch Marking Language", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What is necessary to define an HTML Element ?",
+    answerOptions: [
+      { answerText: "Just its tag", isCorrect: false },
+      { answerText: "Start tag , content , end tag", isCorrect: true },
+      { answerText: "content directly with an alt attribute", isCorrect: false },
+      { answerText: "A start tag and the content after", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What we usually use to read HTML documents ?",
+    answerOptions: [
+      { answerText: "Document editors", isCorrect: false },
+      { answerText: "Just command line instructions", isCorrect: false },
+      { answerText: "Browsers", isCorrect: true },
+      { answerText: "Softwares", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What are the tags I usually find on an HTML page structure ? ",
+    answerOptions: [
+      { answerText: "<p> <h> only", isCorrect: false },
+      { answerText: "<head> only", isCorrect: true },
+      { answerText: "<body> <footer> <header> only", isCorrect: false },
+      { answerText: "<html> <head> <body> with <title> <p> <h> inside", isCorrect: true },
+    ],
+  },
+];
 const videoIds = ["x7xv5n0", "x8wg4uy"];
 
 export default function HTMLPage() {
@@ -58,6 +100,7 @@ export default function HTMLPage() {
       <Title level={data.structureTitleLevel} title={data.structureTitle} />
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
+      <Quiz questions={questions} />
       <Title level={data.videoTitleLevel} title={data.videoTitle} />
       <VideoSearch videoIds={videoIds} />
     </div>
