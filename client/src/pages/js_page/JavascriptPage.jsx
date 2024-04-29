@@ -19,7 +19,7 @@ const data = {
 	Client-Side Language,Cross-Platform,Dynamic Typing,Prototype-based & Event-Driven and Asynchronous. `,
 
   captionIntroImage: "Examples of javascriot with anothers languages :",
-  tagTableSrc: "../src/assets/JS structure.png",
+  tagTableSrc: "../src/assets/JS_structure.png",
   tagTableAlt: "tag_example",
   browserTitle: "Elements include",
   browserTitleLevel: 4,

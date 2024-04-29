@@ -5,21 +5,6 @@ import Title from "../title/Title";
 import styles from "./quizStyle.module.css";
 
 /**
- * Calcule la couleur de fond pour un bouton de réponse.
- * @param {number} index - L'indice de l'option de réponse actuelle.
- * @param {Object} option - L'objet représentant l'option de réponse.
- * @param {number} selectedAnswerIndex - L'indice de l'option de réponse sélectionnée.
- * @returns {string} La couleur de fond du bouton.
- */
-
-function getButtonBackgroundColor(index, option, selectedAnswerIndex) {
-  if (selectedAnswerIndex === index) {
-    return option.isCorrect ? "green" : "red";
-  }
-  return "initial";
-}
-
-/**
  * Composant Quiz qui affiche un quiz interactif avec des questions et des réponses.
  *
  * @param {Object[]} questions - Un tableau d'objets contenant les questions et leurs réponses.
@@ -30,63 +15,60 @@ function getButtonBackgroundColor(index, option, selectedAnswerIndex) {
  */
 
 export default function Quiz({ questions }) {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
+	const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
-  /**
-   * Gère le clic sur une option de réponse, mettant à jour l'indice de la réponse sélectionnée.
-   * @param {number} index - L'indice de l'option de réponse sélectionnée.
-   */
-  const handleAnswerOptionClick = (index) => {
-    setSelectedAnswerIndex(index);
-  };
+	/**
+	 * Gère le clic sur une option de réponse, mettant à jour l'indice de la réponse sélectionnée.
+	 * @param {number} index - L'indice de l'option de réponse sélectionnée.
+	 */
+	const handleAnswerOptionClick = (index) => {
+		setSelectedAnswerIndex(index);
+	};
 
-  const goToNextQuestion = () => {
-    setSelectedAnswerIndex(null);
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    }
-  };
+	const goToNextQuestion = () => {
+		setSelectedAnswerIndex(null);
+		if (currentQuestion < questions.length - 1) {
+			setCurrentQuestion(currentQuestion + 1);
+		}
+	};
 
-  return (
-    <div className={styles.quizContainer}>
-      <Title level="4" title="Notions Quiz" />
-      <TextContent text={questions[currentQuestion].questionText} />
-      <div className={styles.answerSection}>
-        {questions[currentQuestion].answerOptions.map((option, index) => (
-          <button
-            key={option.answerText}
-            type="button"
-            onClick={() => handleAnswerOptionClick(index)}
-            style={{
-              backgroundColor: getButtonBackgroundColor(
-                index,
-                option,
-                selectedAnswerIndex
-              ),
-            }}
-          >
-            {option.answerText}
-          </button>
-        ))}
-      </div>
-      <button type="button" onClick={goToNextQuestion}>
-        Suivant
-      </button>
-    </div>
-  );
+	return (
+		<div className={styles.quizContainer}>
+			<Title level="2" title="Notions Quiz" />
+			<TextContent text={questions[currentQuestion].questionText} />
+			<div className="questionAnswer">
+				{questions[currentQuestion].answerOptions.map((option, index) => (
+					<button
+						key={option.answerText}
+						type="button"
+						onClick={() => handleAnswerOptionClick(index)}
+						className={styles.bn5}
+						data-answer={
+							index === selectedAnswerIndex ? option.isCorrect : undefined
+						}
+					>
+						{option.answerText}
+					</button>
+				))}
+			</div>
+			<button id="nextButton" className={styles.bn5} type="button" onClick={goToNextQuestion}>
+				Suivant
+			</button>
+		</div>
+	);
 }
 
 Quiz.propTypes = {
-  questions: PropTypes.arrayOf(
-    PropTypes.shape({
-      questionText: PropTypes.string.isRequired,
-      answerOptions: PropTypes.arrayOf(
-        PropTypes.shape({
-          answerText: PropTypes.string.isRequired,
-          isCorrect: PropTypes.bool.isRequired,
-        })
-      ).isRequired,
-    })
-  ).isRequired,
+	questions: PropTypes.arrayOf(
+		PropTypes.shape({
+			questionText: PropTypes.string.isRequired,
+			answerOptions: PropTypes.arrayOf(
+				PropTypes.shape({
+					answerText: PropTypes.string.isRequired,
+					isCorrect: PropTypes.bool.isRequired,
+				})
+			).isRequired,
+		})
+	).isRequired,
 };
