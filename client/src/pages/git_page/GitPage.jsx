@@ -114,22 +114,22 @@ const questions = [
   },
   {
     questionText:
-      "All my change are done what is the git command to send it to the git repository  ?",
+      "How to change locally the branch I'm working on ?",
     answerOptions: [
-      { answerText: "git add", isCorrect: false },
+      { answerText: "git branch", isCorrect: false },
       { answerText: "git push", isCorrect: false },
-      { answerText: "git commit", isCorrect: true },
-      { answerText: "git cherry pick", isCorrect: false },
+      { answerText: "git checkout", isCorrect: true },
+      { answerText: "git commit", isCorrect: false },
     ],
   },
   {
     questionText:
-      "All my change are done what is the git command to send it to the git repository  ?",
+      "How to unstage a changement in my file",
     answerOptions: [
-      { answerText: "git add", isCorrect: false },
-      { answerText: "git push", isCorrect: true },
-      { answerText: "git commit -v", isCorrect: false },
-      { answerText: "git pull", isCorrect: true },
+      { answerText: "git rm", isCorrect: false },
+      { answerText: "git pull", isCorrect: false },
+      { answerText: "git stash", isCorrect: false },
+      { answerText: "git reset", isCorrect: true },
     ],
   },
 ];
