@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { FaMoon , FaSun } from "react-icons/fa";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { ThemeContext } from "../../context/ThemeContext";
-
 
 import styles from "./toggleThemeButtonStyle.module.css";
 
 export default function ToggleButton() {
-  const { themeMode , setThemeMode } = useContext(ThemeContext);
+  const { themeMode, setThemeMode } = useContext(ThemeContext);
 
   function toggleThemeMode() {
     if (themeMode === "light") {

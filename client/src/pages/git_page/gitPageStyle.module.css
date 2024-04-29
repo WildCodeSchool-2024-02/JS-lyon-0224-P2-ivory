@@ -47,5 +47,6 @@
 
   .gitPage pre {
     width: 80vw;
+    place-self: center;
   }
 }

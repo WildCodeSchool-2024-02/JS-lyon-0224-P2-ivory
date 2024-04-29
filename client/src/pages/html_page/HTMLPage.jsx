@@ -59,7 +59,7 @@ export default function HTMLPage() {
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
       <Title level={data.videoTitleLevel} title={data.videoTitle} />
-      <VideoSearch videoIds={videoIds}/>
+      <VideoSearch videoIds={videoIds} />
     </div>
   );
 }
