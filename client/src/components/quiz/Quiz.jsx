@@ -37,7 +37,7 @@ export default function Quiz({ questions }) {
 		<div className={styles.quizContainer}>
 			<Title level="2" title="Notions Quiz" />
 			<TextContent text={questions[currentQuestion].questionText} />
-			<div>
+			<div className="questionAnswer">
 				{questions[currentQuestion].answerOptions.map((option, index) => (
 					<button
 						key={option.answerText}
@@ -52,7 +52,7 @@ export default function Quiz({ questions }) {
 					</button>
 				))}
 			</div>
-			<button className={styles.bn5} type="button" onClick={goToNextQuestion}>
+			<button id="nextButton" className={styles.bn5} type="button" onClick={goToNextQuestion}>
 				Suivant
 			</button>
 		</div>
