@@ -3,6 +3,7 @@ import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import Picture from "../../components/picture/Picture";
 import VideoSearch from "../../components/video_search/VideoSearch";
+import Quiz from "../../components/quiz/Quiz";
 
 const data = {
   mainTitle: "REACT",
@@ -35,6 +36,53 @@ const data = {
   structureImageSrc: "../src/assets/React_APP.png",
 };
 
+const questions = [
+  {
+    questionText: "What is REACT?",
+    answerOptions: [
+      { answerText: "A programming language", isCorrect: false },
+      { answerText: "A CSS framework", isCorrect: false },
+      { answerText: "A database management system", isCorrect: false },
+      {
+        answerText: "A JavaScript library for building user interfaces",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "What is the main function of ReactDOM.render() in React?",
+    answerOptions: [
+      { answerText: "Creating a React component", isCorrect: false },
+      {
+        answerText:
+          "Modifying the DOM to reflect the current state of the React application",
+        isCorrect: true,
+      },
+      { answerText: "Loading external JavaScript files", isCorrect: false },
+      { answerText: "Applying CSS styles to a component", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What is the correct syntax for creating a functional component in React?",
+    answerOptions: [
+      { answerText: "class MyComponent extends Component {...}", isCorrect: false },
+      { answerText: "const MyComponent = () => {...}", isCorrect: false },
+      { answerText: "function MyComponent() {...}", isCorrect: true },
+      { answerText: "const MyComponent = class {...}", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "How do you update the state of a component in React?",
+    answerOptions: [
+      { answerText: "By calling the method this.updateState()", isCorrect: false },
+      { answerText: "By using the method this.state()", isCorrect: true },
+      { answerText: "By calling the function ReactDOM.updateState()", isCorrect: false },
+      { answerText: "By directly modifying the state with setState()", isCorrect: true },
+    ],
+  },
+];
+
 const videoIds = ["x8l9cjx", "x7szvlo"];
 
 export default function reactPage() {
@@ -55,6 +103,7 @@ export default function reactPage() {
       <Title level={data.structureTitleLevel} title={data.structureTitle} />
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
+      <Quiz questions={questions} />
       <Title level="4" title="Ressources Videos" />
       <VideoSearch videoIds={videoIds} />
     </div>
