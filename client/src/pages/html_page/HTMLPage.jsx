@@ -1,7 +1,7 @@
 import Picture from "../../components/picture/Picture";
 import TextContent from "../../components/text_content/TextContent";
 import Title from "../../components/title/Title";
-import VideoSlider from "../../components/video_slider/VideoSlider";
+import VideoSearch from "../../components/video_search/VideoSearch";
 
 import styles from "./htmlPageStyle.module.css";
 
@@ -40,6 +40,8 @@ const data = {
   videoTitleLevel: 4,
 };
 
+const videoIds = ["x7xv5n0", "x8wg4uy"];
+
 export default function HTMLPage() {
   return (
     <div className={styles.htmlPage}>
@@ -57,7 +59,7 @@ export default function HTMLPage() {
       <TextContent text={data.structureText} />
       <Picture src={data.structureImageSrc} alt={data.structureImageAlt} />
       <Title level={data.videoTitleLevel} title={data.videoTitle} />
-      <VideoSlider />
+      <VideoSearch videoIds={videoIds} />
     </div>
   );
 }

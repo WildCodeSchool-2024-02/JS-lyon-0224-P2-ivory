@@ -1,6 +1,8 @@
 import Title from "../../components/title/Title";
 import TextContent from "../../components/text_content/TextContent";
 import CodeEditor from "../../components/code_editor/CodeEditor";
+import VideoSearch from "../../components/video_search/VideoSearch";
+import Quiz from "../../components/quiz/Quiz";
 
 import styles from "./gitPageStyle.module.css";
 
@@ -90,6 +92,50 @@ const gitCommands = [
   },
 ];
 
+const questions = [
+  {
+    questionText: "What is the Git Command to stage file modifications ?",
+    answerOptions: [
+      { answerText: "git add", isCorrect: true },
+      { answerText: "git push", isCorrect: false },
+      { answerText: "git commit -v", isCorrect: false },
+      { answerText: "git cherry pick", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "All my change are done what is the git command to send it to the git repository  ?",
+    answerOptions: [
+      { answerText: "git add", isCorrect: false },
+      { answerText: "git push", isCorrect: true },
+      { answerText: "git commit -v", isCorrect: false },
+      { answerText: "git cherry pick", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "All my change are done what is the git command to send it to the git repository  ?",
+    answerOptions: [
+      { answerText: "git add", isCorrect: false },
+      { answerText: "git push", isCorrect: false },
+      { answerText: "git commit", isCorrect: true },
+      { answerText: "git cherry pick", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "All my change are done what is the git command to send it to the git repository  ?",
+    answerOptions: [
+      { answerText: "git add", isCorrect: false },
+      { answerText: "git push", isCorrect: true },
+      { answerText: "git commit -v", isCorrect: false },
+      { answerText: "git pull", isCorrect: true },
+    ],
+  },
+];
+
+const videoIds = ["x1bfcgl", "xf22vs"];
+
 export default function GitPage() {
   return (
     <div className={styles.gitPage}>
@@ -102,6 +148,9 @@ export default function GitPage() {
           <CodeEditor language="bash" codeString={code} />
         </div>
       ))}
+      <Quiz questions={questions} />
+      <Title level="4" title="Ressources Videos" />
+      <VideoSearch videoIds={videoIds} />
     </div>
   );
 }

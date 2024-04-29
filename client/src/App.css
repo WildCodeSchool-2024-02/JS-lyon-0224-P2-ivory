@@ -95,7 +95,6 @@ section {
 
 #root {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,13 +102,11 @@ section {
 
 body {
   line-height: 1;
-  background-color: #fffff4;
-  width: 100vw;
+  min-height: 100vh;
 }
 
 .main {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,4 +115,45 @@ body {
 ol,
 ul {
   list-style: none;
+}
+
+.light {
+  background-color: #fffff4;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark {
+  background-color: #121314;
+  color: #fffcf4;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark nav ul li a {
+  color: #fffcf4;
+}
+
+.dark div {
+  background-color: #121314;
+}
+.dark button {
+  background-color: #121314;
+  color: #fffcf4;
+}
+.light button {
+  background-color: #fffcf4;
+}
+
+.dark div button {
+  background-color: #121314;
+}
+
+.dark div nav {
+  background-color: #121314;
+}
+
+.dark .buttonFormations {
+  color: #fffcf4;
+  border-color: #fffcf4;
 }

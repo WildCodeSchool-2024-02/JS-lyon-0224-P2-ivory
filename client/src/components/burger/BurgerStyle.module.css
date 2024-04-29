@@ -1,9 +1,27 @@
+.buttonBurger {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
 @media screen and (max-width: 450px) {
-  .buttonBurger {
+  .hamburger {
     background-color: #fffcf4;
+    position: fixed;
+  }
+
+  .buttonBurger {
+    display: flex;
     border: none;
+    background-color: #fffcf4;
     color: #ffc736;
     cursor: pointer;
+  }
+
+  .dark .buttonBurger {
+    background-color: #121314;
   }
 
   .list {
@@ -21,8 +39,8 @@
     padding-bottom: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    height: 50vh;
-    width: 7vw;
+    height: 60vh;
+    width: 8vw;
     position: fixed;
     box-shadow: 7px 0px 5px 0px rgba(93, 112, 129, 0.32);
   }
@@ -46,5 +64,10 @@
 
   .logo {
     height: 2rem;
+  }
+
+  .home {
+    color: #ffc736;
+    place-self: center;
   }
 }

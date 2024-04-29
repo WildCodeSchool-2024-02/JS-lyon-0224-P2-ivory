@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars, FaSchool } from "react-icons/fa";
 import styles from "./BurgerStyle.module.css";
 import Html from "../../assets/logos/HTML.png";
 import Css from "../../assets/logos/CSS.png";
@@ -15,7 +15,7 @@ function Burger() {
 
   return (
     <div className={styles.hamburger}>
-      <div>
+      <div className="containerButtonBurger">
         <button
           className={styles.buttonBurger}
           type="button"
@@ -28,6 +28,12 @@ function Burger() {
       {burger === true && (
         <nav className={styles.navbar}>
           <ul className={styles.list}>
+            <li className={styles.element}>
+              <Link className={styles.link} to="/">
+                <FaSchool className={styles.home} size={30} />
+                Home
+              </Link>
+            </li>
             <li className={styles.element}>
               <Link className={styles.link} to="/html">
                 <img className={styles.logo} src={Html} alt="logo html" />

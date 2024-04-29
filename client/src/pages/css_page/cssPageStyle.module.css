@@ -1,44 +1,48 @@
-.htmlPage {
+.cssPage {
   display: flex;
   width: 91vw;
   flex-direction: column;
   place-self: flex-end;
 }
 
-.htmlPage h3 {
+.cssPage h3 {
   font-size: 6rem;
   place-self: center;
 }
 
-.htmlPage h4 {
+.cssPage h4 {
   font-size: 3rem;
   padding: 0.75rem;
 }
 
-.htmlPage p {
+.cssPage p {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 
-.htmlPage img {
+.cssPage img {
   place-self: center;
-  width: 40vw;
+  width: 20vw;
 }
 
 @media screen and (max-width: 450px) {
-  .htmlPage {
+  .cssPage {
     width: 100vw;
     place-self: center;
   }
-  .htmlPage h3 {
+
+  .cssPage h3 {
     font-size: 4rem;
   }
+
   .htmlPage h4 {
     font-size: 2rem;
   }
+
   .htmlPage p {
     font-size: 1rem;
   }
+
   .htmlPage iframe {
     height: 15vh;
     width: 60vw;
